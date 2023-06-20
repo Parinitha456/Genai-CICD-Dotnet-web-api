@@ -2,9 +2,9 @@ name: Pokédex CI
 
 on:
   push:
-    branches: [ main ]
+    branches: [ manualTrigger ]
   pull_request:
-    branches: [ main ]
+    branches: [ manualTrigger ]
 defaults:
   run:
     working-directory: ./Pokedex
