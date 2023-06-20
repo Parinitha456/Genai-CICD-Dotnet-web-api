@@ -1,6 +1,7 @@
 name: Pokédex CI
 
 on:
+  workflow_dispatch:
   push:
     branches: [ manualTrigger ]
   pull_request:
@@ -25,8 +26,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal --settings coverlet.runsettings
-    - name: Upload coverage to Codecov
-      uses: codecov/codecov-action@v1.5.0
-      with:
-        file: "!**/.nuget/packages/**/*.*"
-        flags: ${{ runner.os }}
+    - name: Docker compose up
+      run: docker-compose up 
