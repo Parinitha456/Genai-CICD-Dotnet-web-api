@@ -1,4 +1,4 @@
-name: Pokédex CI
+name: Pokédex CICD
 
 on:
   workflow_dispatch:
