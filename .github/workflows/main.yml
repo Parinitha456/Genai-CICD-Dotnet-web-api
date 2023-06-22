@@ -1,4 +1,4 @@
-name: Gen AI CI
+name: CI Pipeline
 on:
   workflow_dispatch:
   push:
