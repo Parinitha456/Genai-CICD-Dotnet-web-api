@@ -6,6 +6,11 @@ on:
     branches: [ manualTrigger ]
   pull_request:
     branches: [ manualTrigger ]
+    
+env:
+  SONAR_TOKEN: '75621cba6337eff300a0b42e8d68eb9d4cdbe709'
+  SONAR_HOST_URL: 'http://brillioonesonar.eastus.cloudapp.azure.com:9000'
+  
 defaults:
   run:
     working-directory: ./Pokedex
